@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		04A8964E194AE7EE00EE8B44 /* DoActionSheet+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A8964D194AE7EE00EE8B44 /* DoActionSheet+Demo.m */; };
+		6E8311CB1BD8309C00666DC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B9579E1873B38F0072554B /* UIKit.framework */; };
+		6E8311CC1BD830A500666DC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B9579A1873B38F0072554B /* Foundation.framework */; };
+		6E8311CD1BD830B000666DC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B9579C1873B38F0072554B /* CoreGraphics.framework */; };
+		6EDD216A1BD831A7005E3267 /* DoActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD21691BD831A7005E3267 /* DoActionSheet.m */; settings = {ASSET_TAGS = (); }; };
+		6EDD216D1BD8DA63005E3267 /* DoActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B957D81873C3EA0072554B /* DoActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		737FA50218750684008FA5AA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 737FA4FC18750684008FA5AA /* .gitignore */; };
 		737FA50318750684008FA5AA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 737FA4FD18750684008FA5AA /* LICENSE */; };
 		737FA50418750684008FA5AA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 737FA4FE18750684008FA5AA /* README.md */; };
@@ -42,9 +47,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6E8311C01BD8308F00666DC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		04A8964C194AE7EE00EE8B44 /* DoActionSheet+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DoActionSheet+Demo.h"; sourceTree = "<group>"; };
 		04A8964D194AE7EE00EE8B44 /* DoActionSheet+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DoActionSheet+Demo.m"; sourceTree = "<group>"; };
+		6E8311C21BD8308F00666DC8 /* libActionSheetLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libActionSheetLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EDD21681BD831A7005E3267 /* DoActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoActionSheet.h; sourceTree = "<group>"; };
+		6EDD21691BD831A7005E3267 /* DoActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoActionSheet.m; sourceTree = "<group>"; };
 		737FA4FC18750684008FA5AA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		737FA4FD18750684008FA5AA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		737FA4FE18750684008FA5AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -77,6 +97,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6E8311BF1BD8308F00666DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8311CD1BD830B000666DC8 /* CoreGraphics.framework in Frameworks */,
+				6E8311CB1BD8309C00666DC8 /* UIKit.framework in Frameworks */,
+				6E8311CC1BD830A500666DC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5B957941873B38F0072554B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E8311C31BD8308F00666DC8 /* ActionSheetLib */ = {
+			isa = PBXGroup;
+			children = (
+				6EDD21681BD831A7005E3267 /* DoActionSheet.h */,
+				6EDD21691BD831A7005E3267 /* DoActionSheet.m */,
+			);
+			path = ActionSheetLib;
+			sourceTree = "<group>";
+		};
 		737FA4F918750684008FA5AA /* 3rdSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +190,7 @@
 			children = (
 				A5B957A01873B38F0072554B /* TestActionSheet */,
 				A5B957BF1873B38F0072554B /* TestActionSheetTests */,
+				6E8311C31BD8308F00666DC8 /* ActionSheetLib */,
 				A5B957991873B38F0072554B /* Frameworks */,
 				A5B957981873B38F0072554B /* Products */,
 			);
@@ -161,6 +201,7 @@
 			children = (
 				A5B957971873B38F0072554B /* TestActionSheet.app */,
 				A5B957B81873B38F0072554B /* TestActionSheetTests.xctest */,
+				6E8311C21BD8308F00666DC8 /* libActionSheetLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +276,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6EDD216C1BD8DA4F005E3267 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EDD216D1BD8DA63005E3267 /* DoActionSheet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		6E8311C11BD8308F00666DC8 /* ActionSheetLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8311CA1BD8308F00666DC8 /* Build configuration list for PBXNativeTarget "ActionSheetLib" */;
+			buildPhases = (
+				6E8311BE1BD8308F00666DC8 /* Sources */,
+				6E8311BF1BD8308F00666DC8 /* Frameworks */,
+				6E8311C01BD8308F00666DC8 /* CopyFiles */,
+				6EDD216C1BD8DA4F005E3267 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionSheetLib;
+			productName = ActionSheetLib;
+			productReference = 6E8311C21BD8308F00666DC8 /* libActionSheetLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A5B957961873B38F0072554B /* TestActionSheet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5B957C91873B38F0072554B /* Build configuration list for PBXNativeTarget "TestActionSheet" */;
@@ -280,6 +350,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Dono Air";
 				TargetAttributes = {
+					6E8311C11BD8308F00666DC8 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
 					A5B957B71873B38F0072554B = {
 						TestTargetID = A5B957961873B38F0072554B;
 					};
@@ -298,6 +371,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				6E8311C11BD8308F00666DC8 /* ActionSheetLib */,
 				A5B957961873B38F0072554B /* TestActionSheet */,
 				A5B957B71873B38F0072554B /* TestActionSheetTests */,
 			);
@@ -332,6 +406,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6E8311BE1BD8308F00666DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EDD216A1BD831A7005E3267 /* DoActionSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5B957931873B38F0072554B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,6 +473,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6E8311C81BD8308F00666DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = ../Headers/DoActionSheet;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		6E8311C91BD8308F00666DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = ../Headers/DoActionSheet;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
 		A5B957C71873B38F0072554B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -536,6 +656,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6E8311CA1BD8308F00666DC8 /* Build configuration list for PBXNativeTarget "ActionSheetLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8311C81BD8308F00666DC8 /* Debug */,
+				6E8311C91BD8308F00666DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A5B957921873B38F0072554B /* Build configuration list for PBXProject "TestActionSheet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
